@@ -16,7 +16,5 @@ button {
 
 .dice {
     width: 150px;
-    border: 2px solid black;
-    border-radius: 30px;
     margin: 5px;
 }
