@@ -39,4 +39,11 @@ function newCard() {
     const cardImage = "Assets/New Cards/" + cardRandomNum +  ".svg";
     document.querySelector("#openCard").setAttribute("src", cardImage);
     document.querySelector("h2").innerHTML=("New Roll!");
+    
+    //Dice 1 dashed
+    document.querySelector("#dice1").setAttribute("src", "Assets/Dice Faces/Dashed.svg");
+    //Dice 2 dashed
+    document.querySelector("#dice2").setAttribute("src", "Assets/Dice Faces/Dashed.svg");
+    //Dice3 dashed
+    document.querySelector("#dice3").setAttribute("src", "Assets/Dice Faces/Dashed.svg");
 }
