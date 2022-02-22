@@ -44,4 +44,5 @@ function newCard() {
     const cardRandomNum = Math.floor(Math.random() * 52) +1;
     const cardImage = "Assets/New Cards/" + cardRandomNum +  ".svg";
     document.querySelector("#openCard").setAttribute("src", cardImage);
+    document.querySelector("h2").innerHTML=("New Roll!");
 }
