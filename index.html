@@ -10,25 +10,27 @@
     <title>Craps!</title>
 </head>
 <body>
-    <!-- dice one  -->
     <div class="diceSection">
-        <img class="dice"/>
-    <!-- dice two  -->
-        <img class="dice"/>
-    <!-- dice three  -->
-        <img class="dice"/>
+        <!-- random dice one  -->
+        <img id="dice1" class="dice"/>
+        <!-- random dice two  -->
+        <img id="dice2" class="dice"/>
+        <!-- random dice three  -->
+        <img id="dice3" class="dice"/>
     </div>
 
-    <button>Roll</button>
+    <button onclick="rollTheDice()">Roll</button>
 
     <div class="cardSection">
-        <img class="card"/>
+        <!-- dynamic card -->
+        <img id="openCard" class="card"/>
+        <!-- card back image-->
         <img class="card" src="./Assets/Raw/Back.svg" alt="Card Back">
     </div>
     
-    <button>New Card</button>
+    <button onclick="newCard()">New Card</button>
     
     <script src="./script.js"></script>
-    
+
 </body>
 </html>
