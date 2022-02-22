@@ -28,6 +28,15 @@ function rollTheDice() {
     const thirdRandomNum = Math.floor(Math.random() *6) +1;
     const thirdDiceImage = "Assets/Dice Faces/" + thirdRandomNum +  ".svg";
     document.querySelector("#dice3").setAttribute("src", thirdDiceImage);
+
+    //Creates array of possible roll scores and displays the list
+    let scores = [firstRandomNum, secondRandomNum, thirdRandomNum, 
+        firstRandomNum + secondRandomNum, 
+        secondRandomNum + thirdRandomNum,
+        firstRandomNum + thirdRandomNum,
+        firstRandomNum + secondRandomNum + thirdRandomNum]; 
+    uniqueScores = [...new Set(scores)];  
+    document.querySelector("h2").innerHTML=("Numbers Rolled: " + uniqueScores.sort(function(a, b){return a-b}));
 }
 
 function newCard() {
