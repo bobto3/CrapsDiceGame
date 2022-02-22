@@ -21,6 +21,6 @@ document.querySelectorAll("img")[2].setAttribute("src", thirdDiceImage);
 
 const cardRandomNum = Math.floor(Math.random() * 52) +1;
 
-const cardImage = "Assets/Cards/" + cardRandomNum +  ".jpg";
+const cardImage = "Assets/New Cards/" + cardRandomNum +  ".svg";
 
 document.querySelectorAll("img")[3].setAttribute("src", cardImage);
