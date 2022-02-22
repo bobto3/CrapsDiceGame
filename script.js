@@ -1,11 +1,11 @@
 //Dice 1
 document.querySelector("#dice1").setAttribute("src", "Assets/Dice Faces/Dashed.svg");
-// //Dice 2
+//Dice 2
 document.querySelector("#dice2").setAttribute("src", "Assets/Dice Faces/Dashed.svg");
 //Dice3
 document.querySelector("#dice3").setAttribute("src", "Assets/Dice Faces/Dashed.svg");
 
-//roll button fuctionality
+//Roll button fuctionality
 function rollTheDice() {
     //Random dice 1
     const firstRandomNum = Math.floor(Math.random() *6) +1;
@@ -32,7 +32,7 @@ function rollTheDice() {
     document.querySelector("h2").innerHTML=("Numbers Rolled: " + uniqueScores.sort(function(a, b){return a-b}).join(", "));
 }
 
-//new card button fuctionality
+//New card button fuctionality
 function newCard() {
     //Random card
     const cardRandomNum = Math.floor(Math.random() * 52) +1;
