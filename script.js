@@ -1,17 +1,9 @@
 //Dice 1
-const firstRandomNum = Math.floor(Math.random() *6) +1;
-const firstDiceImage = "Assets/Dice Faces/" + firstRandomNum +  ".svg";
-document.querySelector("#dice1").setAttribute("src", firstDiceImage);
-
-//Dice 2
-const secondRandomNum = Math.floor(Math.random() *6) +1;
-const secondDiceImage = "Assets/Dice Faces/" + secondRandomNum +  ".svg";
-document.querySelector("#dice2").setAttribute("src", secondDiceImage);
-
+document.querySelector("#dice1").setAttribute("src", "Assets/Dice Faces/Dashed.svg");
+// //Dice 2
+document.querySelector("#dice2").setAttribute("src", "Assets/Dice Faces/Dashed.svg");
 //Dice3
-const thirdRandomNum = Math.floor(Math.random() *6) +1;
-const thirdDiceImage = "Assets/Dice Faces/" + thirdRandomNum +  ".svg";
-document.querySelector("#dice3").setAttribute("src", thirdDiceImage);
+document.querySelector("#dice3").setAttribute("src", "Assets/Dice Faces/Dashed.svg");
 
 //roll button fuctionality
 function rollTheDice() {
