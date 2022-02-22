@@ -19,3 +19,9 @@ const thirdRandomNum = Math.floor(Math.random() *6) +1;
 const thirdDiceImage = "Assets/Dice Faces/" + thirdRandomNum +  ".svg";
 
 document.querySelectorAll("img")[2].setAttribute("src", thirdDiceImage);
+
+const cardRandomNum = Math.floor(Math.random() * 52) +1;
+
+const cardImage = "Assets/Cards/" + cardRandomNum +  ".jpg";
+
+document.querySelectorAll("img")[3].setAttribute("src", cardImage);

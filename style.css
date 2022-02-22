@@ -1,13 +1,16 @@
 body {
     background-color:forestgreen;
+    text-align: center;
 }
 
-.dice {
-    border: 2px solid black;
-    border-radius: 30px;
+.card {
+    width: 300px;
     margin: 5px;
 }
 
-img {
+.dice {
     width: 200px;
+    border: 2px solid black;
+    border-radius: 30px;
+    margin: 5px;
 }
