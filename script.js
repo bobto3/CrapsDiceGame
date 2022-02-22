@@ -1,5 +1,4 @@
 //Dice 1
-//generate random number between 1 and 6
 const firstRandomNum = Math.floor(Math.random() *6) +1;
 
 const firstDiceImage = "Assets/Dice Faces/" + firstRandomNum +  ".svg";
