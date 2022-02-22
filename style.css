@@ -18,3 +18,30 @@ button {
     width: 150px;
     margin: 5px;
 }
+
+@media screen and (max-width: 992px) {
+    .dice {
+        width: 130px;
+    }
+    .card {
+        width: 280px;
+    }
+  }
+    
+  @media screen and (max-width: 768px) {
+    .dice {
+        width: 115px;
+    }
+    .card {
+        width: 260px;
+    }
+  }
+    
+  @media screen and (max-width: 576px) {
+    .dice {
+        width: 100px;
+    }
+    .card {
+        width: 240px;
+    }
+  }
