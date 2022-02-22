@@ -29,7 +29,7 @@ function rollTheDice() {
         firstRandomNum + thirdRandomNum,
         firstRandomNum + secondRandomNum + thirdRandomNum]; 
     uniqueScores = [...new Set(scores)];  
-    document.querySelector("h2").innerHTML=("Numbers Rolled: " + uniqueScores.sort(function(a, b){return a-b}));
+    document.querySelector("h2").innerHTML=("Numbers Rolled: " + uniqueScores.sort(function(a, b){return a-b}).join(", "));
 }
 
 //new card button fuctionality
