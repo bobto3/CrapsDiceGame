@@ -11,8 +11,8 @@ If a roller scores a point or hits a hardway, they keep the dice and roll again.
 The first player to 7 points wins the round and craps out!
 
 ## Point Numbers:
-##Cards 2–10: Use the number on the card
-##Face cards: Each roller picks a number between 10–18
+Cards 2–10: Use the number on the card
+Face cards: Each roller picks a number between 10–18
 Ace: The first roller picks 1 or 11
 Joker: The first roller picks any number
 
