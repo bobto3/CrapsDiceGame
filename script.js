@@ -28,8 +28,41 @@ function rollTheDice() {
         secondRandomNum + thirdRandomNum,
         firstRandomNum + thirdRandomNum,
         firstRandomNum + secondRandomNum + thirdRandomNum]; 
-    uniqueScores = [...new Set(scores)];  
-    document.querySelector("h2").innerHTML=("Numbers Rolled: " + uniqueScores.sort(function(a, b){return a-b}).join(", "));
+    //uniqueScores = [...new Set(scores)];  
+    //document.querySelector("h2").innerHTML=("Numbers Rolled: " + uniqueScores.sort(function(a, b){return a-b}).join(", "));
+
+    //Chat adds start
+        // Ensure uniqueScores is properly declared
+        let uniqueScores = [...new Set(scores)];  
+
+        // Check for triples
+        let isTriple = (firstRandomNum === secondRandomNum && secondRandomNum === thirdRandomNum);
+
+        // Check for sequence
+        let sortedDice = [firstRandomNum, secondRandomNum, thirdRandomNum].sort((a,b)=>a-b);
+        let isSequence = (
+            sortedDice[1] === sortedDice[0] + 1 &&
+            sortedDice[2] === sortedDice[1] + 1
+        );
+
+        // Determine roll type
+        let rollType = "";
+        if (isTriple) {
+            rollType = "Special Roll! 3 of a Kind!";
+        } else if (isSequence) {
+            rollType = "Special Roll! Straight!";
+        } else {
+            rollType = "No Special";
+        }
+
+        // Build output FIRST (avoids silent failures)
+        let output = "Numbers Rolled: " + uniqueScores.sort((a, b) => a - b).join(", ");
+        output += "<br>Roll Type: " + rollType;
+
+        // Then update DOM
+        document.querySelector("h2").innerHTML = output;
+
+    //chat adds end
 }
 
 //New card button fuctionality
