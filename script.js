@@ -57,7 +57,7 @@ function rollTheDice() {
 
         // Build output FIRST (avoids silent failures)
         let output = "Numbers Rolled: " + uniqueScores.sort((a, b) => a - b).join(", ");
-        output += "<br>Roll Type: " + rollType;
+        output += "<br> " + rollType;
 
         // Then update DOM
         document.querySelector("h2").innerHTML = output;
